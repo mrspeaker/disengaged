@@ -11,7 +11,8 @@
   },
   "applications": {
     "gecko": {
-      "id": "disengaged@a13o.com"
+      "id": "disengaged@a13o.com",
+      "strict_min_version": "59"
     }
   },
   "browser_action": {
@@ -25,8 +26,12 @@
   },
   "permissions": [
     "activeTab",
+    "storage",
     "*://*.youtube.com/*",
     "*://*.twitter.com/*",
     "*://*.news.ycombinator.com/*"
+  ],
+  "optional_permissions": [
+
   ]
 }
